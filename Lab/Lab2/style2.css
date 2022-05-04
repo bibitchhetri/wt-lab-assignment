@@ -1,0 +1,85 @@
+h1 {
+    color: #505053;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 18px;
+    border: solid 1px;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: #5CBB98;
+    color: #5CBB98;
+}
+
+.btn-secondary {
+    background-color: white;
+    border-color: #78929D;
+    color: #78929D;
+}
+
+.btn-destructive {
+    background-color: white;
+    border-color: #E0886A;
+    color: #E0886A;
+}
+
+#btn-primary-hover:hover {
+    border-bottom-color: #5CBB98;
+    border: solid 2px;
+}
+
+#btn-secondary-hover:hover {
+    border-bottom-color: #78929D;
+    border: solid 2px;
+}
+
+#btn-disable-hover:hover {
+    border-bottom-color: #E0886A;
+    border: solid 2px;
+}
+
+/* On Click */
+#btn-primary-hover:active {
+    background-color: #83D0B7;
+    border-color: #83D0B7;
+    color: white;
+}
+
+#btn-secondary-hover:active {
+    background-color: #EDF1F3;
+    border-color: #EDF1F3;
+}
+
+#btn-disable-hover:active {
+    background-color: #E9AB96;
+    border-color: #E9AB96;
+    color: white;
+}
+
+/* Disable Button */
+#btn-disable-primary {
+    background-color: white;
+    border-color: #83D0B7;
+    cursor: not-allowed;
+}
+
+#btn-disable-secondary {
+    background-color: white;
+    border-color: #EDF1F3;
+    color: #78929D;
+    cursor: not-allowed;
+}
+
+#btn-disable-destructive {
+    background-color: white;
+    border-color: #E9AB96;
+    cursor: not-allowed;
+}

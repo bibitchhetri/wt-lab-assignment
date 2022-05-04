@@ -1,0 +1,92 @@
+div {
+    margin: 60px;
+}
+
+a {
+    margin-right: 70px;
+}
+
+h2 {
+    margin-left: 63px;
+}
+
+.btn {
+    border: 4px dotted black;
+    padding: 18px 45px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn1 {
+    border: 4px dashed black;
+    padding: 18px 45px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn2 {
+    border: 4px solid black;
+    padding: 18px 49px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn3 {
+    border: 4px double black;
+    padding: 18px 47px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn4 {
+    border: 4px groove grey;
+    padding: 18px 43px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn5 {
+    border: 4px ridge grey;
+    padding: 18px 52px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn6 {
+    border: 4px inset grey;
+    padding: 18px 50px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn7 {
+    border: 4px outset grey;
+    padding: 18px 50px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn8 {
+    border: none;
+    padding: 18px 45px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn9 {
+    border: hidden;
+    padding: 18px 45px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 21px;
+}

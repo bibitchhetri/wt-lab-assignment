@@ -1,0 +1,101 @@
+h1 {
+    color: #505053;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 18px;
+    border: solid 2px;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn-round {
+    background-color: #5CBB98;
+    border-color: #5CBB98;
+    border-radius: 50%;
+    padding: 9px 12px;
+}
+
+.btn-primary {
+    background-color: #5CBB98;
+    border-color: #5CBB98;
+}
+
+.btn-secondary {
+    background-color: #E6EBED;
+    border-color: #E6EBED;
+    color: #78929D;
+}
+
+.btn-destructive {
+    background-color: #E0886A;
+    border-color: #E0886A;
+}
+
+#btn-round-hover:hover {
+    /* border-bottom: 3px solid #479582; */
+    border-bottom-color: #479582;
+}
+
+#btn-primary-hover:hover {
+    border-bottom-color: #479582;
+}
+
+#btn-secondary-hover:hover {
+    border-bottom-color: #A3B5BD;
+}
+
+#btn-disable-hover:hover {
+    border-bottom-color: #B26C55;
+}
+
+/* On Click */
+#btn-round-hover:active {
+    background-color: #83D0B7;
+    border-color: #83D0B7;
+}
+
+#btn-primary-hover:active {
+    background-color: #83D0B7;
+    border-color: #83D0B7;
+}
+
+#btn-secondary-hover:active {
+    background-color: #EDF1F3;
+    border-color: #EDF1F3;
+}
+
+#btn-disable-hover:active {
+    background-color: #E9AB96;
+    border-color: #E9AB96;
+}
+
+/* Disable Button */
+#btn-disable-round {
+    background-color: #83D0B7;
+    border-color: #83D0B7;
+    cursor: not-allowed;
+}
+
+#btn-disable-primary {
+    background-color: #83D0B7;
+    border-color: #83D0B7;
+    cursor: not-allowed;
+}
+
+#btn-disable-secondary {
+    background-color: #EDF1F3;
+    border-color: #EDF1F3;
+    color: #78929D;
+    cursor: not-allowed;
+}
+
+#btn-disable-destructive {
+    background-color: #E9AB96;
+    border-color: #E9AB96;
+    cursor: not-allowed;
+}
