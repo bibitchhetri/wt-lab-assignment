@@ -1,0 +1,50 @@
+.content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+    width: 600px;
+    font-family: 'Mulish', sans-serif;
+}
+.line1{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    color: #374151;
+}
+.line2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    color: #374151;
+}
+.Blox{
+    background-color: #2663EB;
+    border: solid 1px;
+    border-radius: 10%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 140px;
+    padding: 7px 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.Journey{
+    background-color: #ffff;
+    border: solid 1px #E0E7FE;
+    border-radius: 10%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 7px 15px;
+    text-decoration: none;
+    color:#616975;
+}

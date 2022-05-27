@@ -1,0 +1,109 @@
+.content{
+    font-family: 'Mulish', sans-serif;
+}
+nav{
+    display: inline-block;
+}
+header{
+    position: relative;
+}
+header a{
+    font-size: larger;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.Brand{
+    position: absolute;
+    left: 130px;
+    top: 7px;
+    font-size: 30px;
+    font-weight: 900;
+}
+nav li {
+    display: inline-block;
+    text-align: center;
+  }
+.button{
+    text-decoration: none;
+  }
+.list{
+    margin-left: 350px; 
+    position: absolute;
+    height: 0;
+    left: 50px;
+    font-weight:500;
+}
+.list_text1{
+    display: block;
+    margin-left: 26px;
+    top: 175px;
+    position: absolute;
+}
+.list_text2{
+    display: block;
+    margin-left: 26px;
+    top: 200px;
+    position: absolute;
+}
+.list_text3{
+    display: block;
+    margin-left: 26px;
+    top: 225px;
+    position: absolute;
+}
+svg{
+    height: 20px;
+    width: 20px;
+    color:#3B82F6 ;
+    display: inline;
+   
+}
+.contact_us{
+    position: absolute;
+    right: 95px;
+    top: 0;
+    border:solid  1px #EEEFF2;
+    border-radius: 5%;
+}
+.main_content{
+    position: absolute;
+    left: 140px;
+    top: 130px;
+    margin: auto;
+    height: 420px;
+    width: 640px;
+}
+.picture{
+    position: absolute;
+    right: 95px;
+    top: 130px;
+}
+img{
+    width: 650px;
+    height: 420px;
+    border-radius: 2%;
+}
+#title{
+    font-size: 50px;
+}
+.email{
+    border: solid 1px #EEEFF2;
+    padding: 20px 250px 20px 40px;
+    width: 180px;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 15px;
+}
+#join_btn{
+    position:absolute;
+    border-radius: 5%;
+    border: 1px #3B82F6;
+    border-radius: 5%;
+    background-color: #3B82F6;
+    color: #EEEFF2;
+    bottom: 60px;
+    left: 374px;
+    padding:15px 20px 15px 20px;
+    text-decoration: none;
+}
