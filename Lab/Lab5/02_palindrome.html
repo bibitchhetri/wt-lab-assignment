@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome</title>
+  </head>
+  <body>
+    <h1>It is a <span id="display"></span></h1>
+    <script type="text/javascript">
+      let name = prompt("Enter a number");
+      let temp = [];
+      for (let i = name.length - 1; i >= 0; i--) {
+        temp = temp + name[i];
+      }
+      if (temp === name) {
+        document.querySelector("#display").textContent = " palindrome";
+      } else {
+        document.querySelector("#display").textContent = " not a palindrome";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Numbers</title>
+  </head>
+  <body>
+    <h1>
+      Sum of prime nummber between 1 and 50 is <span id="display"></span>
+    </h1>
+    <script type="text/javascript">
+      let sum = 0;
+      let factor = 0;
+      for (let i = 1; i <= 50; i++) {
+        for (let j = 1; j <= i; j++) {
+          if (i % j == 0) {
+            factor++;
+          }
+        }
+
+        if (factor == 2) {
+          console.log(i);
+          sum += i;
+        }
+        factor = 0;
+      }
+      document.querySelector("#display").textContent = sum;
+    </script>
+  </body>
+</html>
