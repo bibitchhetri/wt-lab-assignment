@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: solid 2px;
+            padding: auto;
+            top: 320px;
+            left: 520px;
+            margin: 10px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+        .ring1 {
+            background-color: red;
+        }
+        .ring2 {
+            background-color: yellow;
+        }
+        .rose {
+            background-color: green;
+        }
+    </style>
+</head>
+<body onload="move('box1','box2','box3')">
+    <div id="box1" class="box ring1">Ringer</div>
+    <div id="box2" class="box ring2">Ringer</div>
+    <div id="box3" class="box rose">Roses</div>
+    <script>
+        let dragValue;
+        function move(id){
+            let element =document.querySelector("#box1");
+            let element2 =document.querySelector("#box2");
+            let element3 =document.querySelector("#box3");
+            element.onmousedown = () => {
+                dragValue = element;
+            }
+            element2.onmousedown = () => {
+                dragValue = element2;
+            }
+            element3.onmousedown = () => {
+                dragValue = element3;
+            }
+        
+        document.onmouseup =function(event){
+            dragValue=null;
+        }
+        document.onmousemove = function(event){
+            let x = event.pageX;
+            let y = event.pageY;
+            
+            dragValue.style.position = 'absolute';
+            dragValue.style.left = x + "px";
+            dragValue.style.top = y + "px";
+        }
+    }
+    </script>
+</body>
+</html>
