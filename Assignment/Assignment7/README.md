@@ -8,11 +8,14 @@ Web development. PHP | Perl | Python. The name MAMP is an acronym that stems fro
 `brew install MAMP`
 
 ### Creating Virtual Host
-1. Include local host in httpd.conf
+1. Include Virtual host on httpd.conf
 ![screen sort](./images/configByIncludeVhosts.png)
 
-1. Listen port 80 in in httpd.conf
+1. Listen port 80 on httpd.conf
 ![screen sort](./images/listenPort80.png)
+
+1. Configure Virtual host on httod-vhosts.conf
+![screen sort](./images/createVhosts.png)
 
 1. Add new local host( i.e hello.local & second.local ) on file system /etc/hosts
 ![screen sort](./images/includeVhost.png)
@@ -33,5 +36,5 @@ Web development. PHP | Perl | Python. The name MAMP is an acronym that stems fro
     echo "Hello World!" 
 ?>
 ```
-1. php code starts with <?pht and ends with ?>
-1. echo helps to print in the browser screen
+1. php code starts with `<?php` and ends with `?>`
+1. `echo` helps to print in the browser screen
