@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: solid 2px;
+            padding: auto;
+            margin: 10px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            background-color: rgb(224, 220, 220);
+        }
+    </style>
+</head>
+<body onload="move('box1')">
+    <div id="box1" class="box"></div>
+    <script>
+        let dragValue;
+        function move(id){
+            let element =document.querySelector("#box1");
+            element.onmousedown = () => {
+                dragValue = element;
+            }
+        
+        document.onmouseup =function(event){
+            dragValue=null;
+        }
+        document.onmousemove = function(event){
+            let x = event.pageX;
+            // let y = event.pageY;
+            
+            dragValue.style.position = 'absolute';
+            dragValue.style.width = x + "px";
+            dragValue.style.height = x + "px";
+        }
+    }
+    </script>
+</body>
+</html>

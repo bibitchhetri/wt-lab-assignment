@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting List</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .title {
+      font-size: 3em;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: black;
+      text-align: center;
+    }
+    .container {
+      margin-left: 45%;
+    }
+
+    .draggable {
+      margin: auto;
+      margin-left: 30px;
+      margin-top: 60px;
+      padding: auto;
+      padding-top: 30px;
+      width: 200px;
+      height: 50px;
+      left: 500px;
+      background-color: rgb(169, 175, 174);
+      cursor: pointer;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .dragging {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Drag Anywhere</h1>
+  <div class="container">
+    <div class="draggable" draggable="true">
+      First
+    </div>
+    <div class="draggable" draggable="true">
+      Second
+    </div>
+    <div class="draggable" draggable="true">
+      Third
+    </div>
+    <div class="draggable" draggable="true">
+      Fourth
+    </div>
+    <div class="draggable" draggable="true">
+      Fifth
+    </div>
+    <div class="draggable" draggable="true">
+      Sixth
+    </div>
+    <div class="draggable" draggable="true">
+      Seventh
+    </div>
+  </div>
+  <script>
+    const draggables = document.querySelectorAll(".draggable");
+    const containers = document.querySelectorAll(".container");
+
+    draggables.forEach((draggable) => {
+      draggable.addEventListener("dragstart", () => {
+        draggable.classList.add("dragging");
+      });
+
+      draggable.addEventListener("dragend", () => {
+        draggable.classList.remove("dragging");
+      });
+    });
+
+    containers.forEach((container) => {
+      container.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(container, e.clientY);
+        const dragitem = document.querySelector(".dragging");
+        if (afterElement == null) {
+          container.appendChild(dragitem);
+        } else {
+          container.insertBefore(dragitem, afterElement);
+        }
+      });
+    });
+
+    function getDragAfterElement(container, y) {
+      const draggableElements = [
+        ...container.querySelectorAll(".draggable:not(.dragging)"),
+      ];
+
+      return draggableElements.reduce(
+        (closest, child) => {
+          const box = child.getBoundingClientRect();
+          const offset = y - box.top - box.height / 2;
+          if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+          } else {
+            return closest;
+          }
+        },
+        { offset: Number.NEGATIVE_INFINITY }
+      ).element;
+    }
+  </script>
+</body>
+
+</html>

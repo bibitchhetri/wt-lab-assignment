@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      main {
+        width: 70%;
+        height: 40%;
+        /* background-color: aqua; */
+        align-items: center;
+        margin: 300px auto;
+        position: relative;
+      }
+      main img {
+        width: 70%;
+        height: 40%;
+        object-fit: cover;
+      }
+
+      .left {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 500px;
+        left: -80px;
+        cursor: pointer;
+      }
+      .right {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 500px;
+        right: 500px;
+        cursor: pointer;
+      }
+      .one {
+        display: block;
+      }
+      .two {
+        display: none;
+      }
+      .three {
+        display: none;
+      }
+      .four {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="./images/one.jpg" alt="abnab" class="one" />
+      <img src="./images/two.jpg" alt="abnab" class="two" />
+      <img src="./images/three.jpg" alt="abnab" class="three" />
+      <img src="./images/four.jpg" alt="abnab" class="four" />
+      <div class="left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </div>
+      <div class="right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+    </main>
+    <script type="text/javascript">
+      let container = document.querySelector("main");
+      let right = document.querySelector(".right");
+      let left = document.querySelector(".left");
+      let one = document.querySelector(".one");
+      let two = document.querySelector(".two");
+      let three = document.querySelector(".three");
+      let four = document.querySelector(".four");
+      let i = 0;
+      let arr = [one, two, three, four];
+      right.addEventListener("click", function () {
+        arr[i].style.display = "none";
+        i = i + 1;
+        if (i > 3) {
+          arr[3].style.display = "block";
+          i = 3;
+        } else {
+          arr[i].style.display = "block";
+        }
+      });
+      left.addEventListener("click", function () {
+        arr[i].style.display = "none";
+        i = i - 1;
+        if (i < 0) {
+          arr[0].style.display = "block";
+          i = 0;
+        } else {
+          arr[i].style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
