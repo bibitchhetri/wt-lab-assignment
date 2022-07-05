@@ -14,14 +14,17 @@
 
 
 ### Assignment 
-| S.N      |  Link |  Title |
-| :---        |    :----:   |          ---: |
-| Assignment 1      |[View](./Assignment/Assignment1/)|Get the domain and deploy a basic Html on Internet       |  
-| Assignment 2      | [View](./Assignment)| Create Github Repository     | 
-| Assignment 3      |  [View](./Assignment/Assignment3/)|MDN Fixing the Html Template Using Semantic Tags      | 
-| Assignment 4      |  [View](./Assignment/Assignment4/)|Designing the table using html css     | 
-| Assignment 5      |  [View](./Assignment/Assignment5/)|Designing the table using html css     | 
-| Assignment 6      |  [View](./Assignment/Assignment6/)|Designing the table using html css     | 
+| S.N      |   Title | Link | 
+| :---        |              ---: | :----:   |
+| Assignment 1      |Get the domain and deploy a basic Html on Internet       |   [View](./Assignment/Assignment1/)|
+| Assignment 2      |  Create Github Repository     |  [View](./Assignment)|
+| Assignment 3      |  MDN Fixing the Html Template Using Semantic Tags      |  [View](./Assignment/Assignment3/)|
+| Assignment 4      |  Designing the table using html css     |  [View](./Assignment/Assignment4/)|
+| Assignment 5      |  Website Hosting     |  [View](./Assignment/Assignment5/)|
+| Assignment 6      |  Drag and Drop    |  [View](./Assignment/Assignment6/)|
+| Assignment 7      |  Getting started with XAMP & Virtual host    |  [View](./Assignment/Assignment7/)|
+| Assignment 8      |  Php Data sorting in tree/table format     |  [View](./Assignment/Assignment8/)|
+| Assignment 9      |  CRUD Operation     |  [View](./Assignment/Assignment9/)|
 
 
 
@@ -34,3 +37,8 @@
 | Lab 3      |Tailwind css Color pallets  |  [View](./Lab/Lab3/)|
 | Lab 4      |Css Design Patterns    |  [View](./Lab/Lab4/)|
 | Lab 5      |Javascript Started  |  [View](./Lab/Lab5/)|
+| Lab 6      |Drag, Gallery & sortable Drag |  [View](./Lab/Lab5/)|
+
+
+
+<!-- 1. About HTTP protocol/ Technology used in web with short notes. -->
