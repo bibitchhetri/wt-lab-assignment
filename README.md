@@ -25,6 +25,7 @@
 | Assignment 7      |  Getting started with XAMP & Virtual host    |  [View](./Assignment/Assignment7/)|
 | Assignment 8      |  Php Data sorting in tree/table format     |  [View](./Assignment/Assignment8/)|
 | Assignment 9      |  CRUD Operation     |  [View](./Assignment/Assignment9/)|
+| Final Project      |  Portfolio Website     |  [View](./Assignment/Final-Project/)|
 
 
 
